@@ -1,3 +1,7 @@
+if (!sessionStorage.getItem("Name")) {
+  window.location.pathname = "./";
+}
+
 function runSpeechRecognition() {
   var Name = document.getElementById("name");
   Name.innerHTML = "Name: " + sessionStorage.getItem("Name");
