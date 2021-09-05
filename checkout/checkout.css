@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #161623;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#f00, #f0f);
+  clip-path: circle(60% at right 70%);
+}
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#2196f3, #e91e63);
+  clip-path: circle(40% at 10% 10%);
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+.container .card {
+  position: relative;
+  width: 75vh;
+  height: 75vh;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+.container .card .content {
+  padding: 20px;
+  text-align: center;
+}
+
+.container .card .content h1 {
+  top: 10px;
+  font-size: 3.2em;
+  color: #fff;
+  z-index: 1;
+}
+.container .card .content h2 {
+  top: 10px;
+  font-size: 2.2em;
+  color: #fff;
+  z-index: 1;
+}
+.container .card .content h4 {
+  top: 10px;
+  font-size: 1.8em;
+  color: #fff;
+  z-index: 1;
+}
+
+.container .card .content p {
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: 300;
+}
+.container .card .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  color: #000;
+  background: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.footer {
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+}
+.footer span {
+  color: #fff;
+  text-align: left;
+  display: block;
+}
+.people {
+  background: rgba(14, 118, 168, 1) !important ;
+  color: white !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important;
+}
+.bird1 {
+  position: relative;
+}
+#bird {
+  right: 100%;
+  animation: fly 10s infinite;
+  overflow: hidden;
+}
+
+@keyframes fly {
+  0% {
+    right: 500%;
+    top: 5px;
+  }
+  25% {
+    top: 50px;
+  }
+  50% {
+    top: 80px;
+  }
+  75% {
+    top: 25px;
+  }
+  100% {
+    right: -1000%;
+    top: 120px;
+  }
+}
