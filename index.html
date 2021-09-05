@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Voice Flappy Bird</title>
+    <script src="./index.js"></script>
+  </head>
+  <body onload="runSpeechRecognition()">
+    <div class="container">
+      <div class="text-content">
+        <h2 id="welcome">Welcome to</h2>
+        <h2>Voice Flappy Bird</h2>
+        <hr id="line" />
+        <p>
+        <div >
+            To proceed to play the game , say : &nbsp;
+            <h4 style="display: inline" class="play-word">
+
+              <span class="bounce">P</span>
+              <span class="bounce">L</span>
+              <span class="bounce">A</span>
+              <span class="bounce">Y</span>
+            </h4>
+            
+        </div>
+        </p>
+        <div class="play-button">
+          <span class="play">Play</span>
+          <a href="./instructions/index.html" style="text-decoration: none; color: white;"><i class="fa fa-play elementToFadeInAndOut" ></i></a>
+          
+        </div>
+        <div>
+          <span class="group-info">
+
+             I-Link Hackathon '21
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+
+</html>
